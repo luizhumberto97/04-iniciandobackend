@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Para aparecer a imagem no navegador
 // assim será o link http://localhost:3333/files/codigodaImagem
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 
 app.use(routes); // Usando o routes que serve como middleware
 
